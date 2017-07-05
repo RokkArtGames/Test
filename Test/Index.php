@@ -1,17 +1,15 @@
 <?php
-
 /**
  * Created by PhpStorm.
  * User: ПК
- * Date: 04.07.2017
- * Time: 23:11
+ * Date: 05.07.2017
+ * Time: 9:42
+ *
  */
 
+require __DIR__ .'/../App/IDo.php';
 
-require __DIR__.'/../App/Prog.php';
-
-$app=new Aps\Prog();
-
-
-
-
+$Ido = new \App\IDo();
+$ItsRain=true;
+$Tmp="5 градусов тепла";
+$Ido->Walk($ItsRain,$Tmp);
